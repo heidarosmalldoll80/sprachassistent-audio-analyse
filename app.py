@@ -8,13 +8,13 @@ def index():
 
 @app.route('/api/audio', methods=['POST'])
 def analyze_audio():
-    # Platzhalter für die Audioanalyse-Logik
-    # Erwarte, dass eine Audiodatei hochgeladen wird
+    # Function to handle audio file uploads and analysis
+    # Check if an audio file has been uploaded
     if 'audio' not in request.files:
         return jsonify({'error': 'Keine Audiodatei hochgeladen!'}), 400
     audio_data = request.files['audio']
-    # Hier sollte die Logik zur Analyse der Audiodaten eingefügt werden
-    # Dummy-Response
+    # TODO: Implement the audio analysis logic here
+    # Currently, returning a dummy response
     return jsonify({'message': 'Audio erfolgreich analysiert', 'feedback': 'Verbessere deine Aussprache!'}), 200
 
 if __name__ == '__main__':
