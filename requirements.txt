@@ -1,0 +1,6 @@
+Flask
+TensorFlow
+SpeechRecognition
+pydub
+numpy
+scipy
