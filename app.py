@@ -10,6 +10,8 @@ def index():
 def analyze_audio():
     # Platzhalter für die Audioanalyse-Logik
     # Erwarte, dass eine Audiodatei hochgeladen wird
+    if 'audio' not in request.files:
+        return jsonify({'error': 'Keine Audiodatei hochgeladen!'}), 400
     audio_data = request.files['audio']
     # Hier sollte die Logik zur Analyse der Audiodaten eingefügt werden
     # Dummy-Response
