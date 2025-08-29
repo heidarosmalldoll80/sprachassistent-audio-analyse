@@ -1,6 +1,17 @@
+# Flask is a micro web framework for Python
 Flask
+
+# TensorFlow is an end-to-end open source platform for machine learning
 TensorFlow
+
+# SpeechRecognition library for performing speech recognition, with support for several engines
 SpeechRecognition
+
+# pydub is a Python library for manipulating audio with a simple and easy-to-use interface
 pydub
+
+# NumPy is the fundamental package for scientific computing with Python
 numpy
+
+# SciPy is a Python library used for scientific and technical computing
 scipy
