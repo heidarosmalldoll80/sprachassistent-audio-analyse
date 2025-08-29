@@ -8,8 +8,10 @@ def index():
 
 @app.route('/api/audio', methods=['POST'])
 def analyze_audio():
-    # Placeholder für die Audioanalyse-Logik
+    # Platzhalter für die Audioanalyse-Logik
+    # Erwarte, dass eine Audiodatei hochgeladen wird
     audio_data = request.files['audio']
+    # Hier sollte die Logik zur Analyse der Audiodaten eingefügt werden
     # Dummy-Response
     return jsonify({'message': 'Audio erfolgreich analysiert', 'feedback': 'Verbessere deine Aussprache!'}), 200
 
