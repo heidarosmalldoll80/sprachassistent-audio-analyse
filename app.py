@@ -13,6 +13,9 @@ def analyze_audio():
     if 'audio' not in request.files:
         return jsonify({'error': 'Keine Audiodatei hochgeladen!'}), 400
     audio_data = request.files['audio']
+    # Check if the uploaded file is empty
+    if audio_data.filename == '':
+        return jsonify({'error': 'Die hochgeladene Audiodatei ist leer!'}), 400
     # TODO: Implement the audio analysis logic here
     # Currently, returning a dummy response
     return jsonify({'message': 'Audio erfolgreich analysiert', 'feedback': 'Verbessere deine Aussprache!'}), 200
