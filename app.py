@@ -18,6 +18,8 @@ def analyze_audio():
         return jsonify({'error': 'Die hochgeladene Audiodatei ist leer!'}), 400
     # TODO: Implement the audio analysis logic here
     # Currently, returning a dummy response
+    # Debugging statement to log the uploaded file details
+    print(f"Uploaded audio file: {audio_data.filename}")
     return jsonify({'message': 'Audio erfolgreich analysiert', 'feedback': 'Verbessere deine Aussprache!'}), 200
 
 if __name__ == '__main__':
